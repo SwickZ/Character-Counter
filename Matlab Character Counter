@@ -1,0 +1,67 @@
+function []=Calculator()
+file = fopen('Database123.txt', 'r');myfile = fread(file);myfile123= char(myfile);mat1=size(myfile123);a=0;b=a;c=a;d=a;e=a;f=a;g=a;h=a;i=a;j=a;k=a;l=a;m=a;n=a;o=a;p=a;q=a;r=a;s=a;t=a;u=a;v=a;w=a;x=a;y=a;z=a;
+for index=1:mat1
+    if myfile123(index) == 'a'
+        a=a+1;
+    elseif myfile123(index) == 'b'
+        b=b+1;
+    elseif myfile123(index) == 'c'
+        c=c+1;
+    elseif myfile123(index) == 'd'
+        d=d+1;
+    elseif myfile123(index) == 'e'
+        e=e+1;
+    elseif myfile123(index) == 'f'
+        f=f+1;
+    elseif myfile123(index) == 'g'
+        g=g+1;
+    elseif myfile123(index) == 'h'
+        h=h+1;
+    elseif myfile123(index) == 'i'
+        i=i+1;
+    elseif myfile123(index) == 'j'
+        j=j+1;
+    elseif myfile123(index) == 'k'
+        k=k+1;
+    elseif myfile123(index) == 'l'
+        l=l+1;
+    elseif myfile123(index) == 'm'
+        m=m+1;
+    elseif myfile123(index) == 'n'
+        n=n+1;
+    elseif myfile123(index) == 'o'
+        o=o+1;
+    elseif myfile123(index) == 'p'
+        p=p+1;
+    elseif myfile123(index) == 'q'
+        q=q+1;
+    elseif myfile123(index) == 'r'
+        r=r+1;
+    elseif myfile123(index) == 's'
+        s=s+1;
+    elseif myfile123(index) == 't'
+        t=t+1;
+    elseif myfile123(index) == 'u'
+        u=u+1;
+    elseif myfile123(index) == 'v'
+        v=v+1;
+    elseif myfile123(index) == 'w'
+        w=w+1;
+    elseif myfile123(index) == 'x'
+        x=x+1;
+    elseif myfile123(index) == 'y'
+        y=y+1;
+    elseif myfile123(index) == 'z'
+        z=z+1;
+    end
+end
+total=mat1(1);a=(a/total)*100;b=(b/total)*100;c=(c/total)*100;d=(d/total)*100;e=(e/total)*100;f=(f/total)*100;g=(g/total)*100;h=(h/total)*100;i=(i/total)*100;j=(j/total)*100;k=(k/total)*100;l=(l/total)*100;m=(m/total)*100;n=(n/total)*100;o=(o/total)*100;p=(p/total)*100;q=(q/total)*100;r=(r/total)*100;s=(s/total)*100;t=(t/total)*100;u=(u/total)*100;v=(v/total)*100;w=(w/total)*100;x=(x/total)*100;y=(y/total)*100;z=(z/total)*100;dic2=[a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z];
+bar(dic2),set(gca, 'XTickLabel',cellstr(char(97:122)'),'XTick',1:26)
+hold on
+title('PROBABILITY')
+hold on
+xlabel('Alphabets')
+hold on
+ylabel('Frequency Percentage')
+fclose(file);
+end
